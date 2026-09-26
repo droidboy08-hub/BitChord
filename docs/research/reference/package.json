@@ -1,0 +1,10 @@
+{
+  "name": "bitchord-engine-reference",
+  "private": true,
+  "description": "Dependency-free JavaScript reference implementations of the mechanisms described in ../BITCHORD_ENGINE_RESEARCH.md",
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "test": "node --test"
+  }
+}
