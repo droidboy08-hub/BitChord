@@ -42,6 +42,9 @@ export const LYRICS_SOURCES = Object.freeze([
   src('megalobiz', 'Megalobiz', 'Community-made, whole-line LRC', false),
   src('kugou', 'KuGou', 'Whole lines, strong outside the English catalogue', false),
   src('lrclib', 'LRCLIB', 'Whole lines only, and always up', false),
+  // LyricsSource.kt:102-106 labels Musixmatch line-only, but Musixmatch.kt asks
+  // track.richsync.get first and returns word timing when it exists, so the
+  // provider module (providers/musixmatch.js) declares wordSynced: true.
   src('musixmatch', 'Musixmatch', 'Whole lines, from the biggest lyrics database there is', false),
   src('genius', 'Genius', 'Plain text fallback, massive web catalogue', false),
 ]);
